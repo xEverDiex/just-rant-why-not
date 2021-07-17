@@ -1,0 +1,117 @@
+h1, h3, h2{
+    font-weight: 100;
+}
+.center {
+    align-items: center;
+    text-align: center;
+    text-decoration: none !important;
+}
+.longP{
+    text-align: justify;
+    margin: 45px;
+}
+.spacer {
+    margin: 20px !important;
+}
+
+.buttonPrime{
+    max-width: 105px !important;
+    margin: 5px !important;
+    width: 100%;
+}
+
+.nav {
+    border-bottom: solid 1px black;
+    padding: 5px;
+}
+
+.linkA {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li a {
+    margin: 10px;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.logout {
+    float: right !important;
+    margin-right: 10px !important;
+    margin-top: -5px !important;
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .left {
+display: none;
+
+    }
+
+.newsfeed {
+
+    width: 400px;
+}
+}
+
+
+
+/* animate loading screen */
+
+.rotate-out-center {
+    background-color: red;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    margin-top: 325px;
+    -webkit-animation: rotate-out-center 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+    animation: rotate-out-center 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+}
+
+@-webkit-keyframes rotate-out-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate-out-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+}
+
+.containerMain{
+    margin: auto;
+    align-items: center;
+}
+.containerLandingPage{
+    background-repeat: no-repeat;
+    height: 900px;
+    
+}
+.containerFormLandingPage{
+    float: right;
+    margin-right: 280px;
+    margin-top: 180px;
+}
