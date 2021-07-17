@@ -257,7 +257,7 @@ const Homepage = () => {
           .then((docRef) => {
             let forComment = docRef.id;
             if (!file) {
-              console.log(forComment);
+              
               db.collection("posts")
                 .doc(forComment)
                 .update({ postId: forComment });
@@ -285,14 +285,14 @@ const Homepage = () => {
                   });
                 });
             } else {
-              console.log(forComment + " photo");
+             
               const storage = firebase.storage();
               const ref = storage.ref(`/images/${forComment}/${file.name}`);
               ref.put(file).then((snapshot) => {
                 ref.getDownloadURL().then((url) => {
                   setFile(null);
                   setURL(url);
-                  console.log(url);
+              
                   //if post has photo
                   db.collection("posts")
                     .doc(forComment)
@@ -330,7 +330,6 @@ const Homepage = () => {
                     });
                 });
               });
-              //uploadTask.on("state_changed", console.log, console.error, () => {
             }
           });
       })
@@ -484,7 +483,7 @@ const Homepage = () => {
   return (
     <div className={classes.main}>
       <Navbar></Navbar>
-      <div>
+      <div style={{height:"100%"}}>
         <Grid container direction="column" spacing={2} alignContent="center">
           <Grid
             item

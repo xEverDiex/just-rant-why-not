@@ -97,10 +97,10 @@ export default function Register() {
               password: payload.password,
             })
             .then(() => {
-              console.log("Document successfully written!");
+              
             })
             .catch((error) => {
-              console.error("Error writing document: ", error);
+              //console.error("Error writing document: ", error);
               alert("Push to Profile Collection Error");
             });
           alert("Welcome new user.");

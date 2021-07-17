@@ -136,7 +136,7 @@ export default function Profile() {
         .doc(docRef)
         .delete()
         .then(() => {
-          console.log("root post deleted");
+          //success
         });
     } else {
       //cancelled
